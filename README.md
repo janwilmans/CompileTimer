@@ -6,6 +6,7 @@ The tests are currently only done with VS2017/ msbuild (15.6 preview 7)
 
 First results:
 
+```
 10.000 empty runs: 191ns
 default empty console project: 563ms
 default + include "windows.h": 607ms 
@@ -13,7 +14,7 @@ default + instantiate 1000 std::vector<T>'s: 607ms
 default + instantiate 10.000 std::vector<T>'s: 1064ms
 default + instantiate 50.000 std::vector<T>'s: 8712ms
 default + instantiate 100.000 std::vector<T>'s: 33264ms
-
+```
 Quite unexpectedly, compiling more vectors does not scale linearly. 
 
 ```
