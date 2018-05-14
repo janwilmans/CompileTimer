@@ -85,3 +85,67 @@ Quite unexpectedly
 Press any key to continue . . .
 
 ```
+
+```
+[==========] Running 9 tests from 9 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from BaselineEmptyTest
+[ RUN      ] BaselineEmptyTest.BuildTimesTest
+[ AVG TIME ] EMPTY_BASELINE: 1ns
+[       OK ] BaselineEmptyTest.BuildTimesTest (1 ms)
+[----------] 1 test from BaselineEmptyTest (1 ms total)
+
+[----------] 1 test from BaselineSleep1msTest
+[ RUN      ] BaselineSleep1msTest.BuildTimesTest
+[ AVG TIME ] 20ms Baseline: 20.449ms
+[       OK ] BaselineSleep1msTest.BuildTimesTest (208 ms)
+[----------] 1 test from BaselineSleep1msTest (208 ms total)
+
+[----------] 1 test from EmptyProjectTest
+[ RUN      ] EmptyProjectTest.BuildTimesTest
+[ AVG TIME ] 1333.13ms
+[       OK ] EmptyProjectTest.BuildTimesTest (6674 ms)
+[----------] 1 test from EmptyProjectTest (6674 ms total)
+
+[----------] 1 test from WindowsHeaderTest
+[ RUN      ] WindowsHeaderTest.BuildTimesTest
+[ AVG TIME ] 1410.95ms
+[       OK ] WindowsHeaderTest.BuildTimesTest (7066 ms)
+[----------] 1 test from WindowsHeaderTest (7067 ms total)
+
+[----------] 1 test from Vector1kTest
+[ RUN      ] Vector1kTest.BuildTimesTest
+[ AVG TIME ] 1502.5ms
+[       OK ] Vector1kTest.BuildTimesTest (7525 ms)
+[----------] 1 test from Vector1kTest (7526 ms total)
+
+[----------] 1 test from Vector10kTest
+[ RUN      ] Vector10kTest.BuildTimesTest
+[ AVG TIME ] 4364.34ms
+[       OK ] Vector10kTest.BuildTimesTest (21855 ms)
+[----------] 1 test from Vector10kTest (21856 ms total)
+
+[----------] 1 test from Vector10kSameTest
+[ RUN      ] Vector10kSameTest.BuildTimesTest
+[ AVG TIME ] 4067.35ms
+[       OK ] Vector10kSameTest.BuildTimesTest (20363 ms)
+[----------] 1 test from Vector10kSameTest (20363 ms total)
+
+[----------] 1 test from Vector50kTest
+[ RUN      ] Vector50kTest.BuildTimesTest
+[ AVG TIME ] 72024.6ms
+[       OK ] Vector50kTest.BuildTimesTest (360211 ms)
+[----------] 1 test from Vector50kTest (360211 ms total)
+
+[----------] 1 test from Vector100kTest
+[ RUN      ] Vector100kTest.BuildTimesTest
+[ AVG TIME ] 273680ms
+[       OK ] Vector100kTest.BuildTimesTest (1368639 ms)
+[----------] 1 test from Vector100kTest (1368641 ms total)
+
+[----------] Global test environment tear-down
+[==========] 9 tests from 9 test cases ran. (1792552 ms total)
+[  PASSED  ] 9 tests.
+Press any key to continue . . .
+```
+
