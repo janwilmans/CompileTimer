@@ -4,8 +4,7 @@ Set of tests to benchmark the compile time of c++ constructs
 This project is an attempt to understand what c++ construct take how much time to build (compile + link)
 The tests are currently only done with VS2017/ msbuild (15.6 preview 7)
 
-First results:
-
+Results from  VS2017/ msbuild (15.6 preview 7):
 ```
 10.000 empty runs: 191ns
 default empty console project: 563ms
@@ -14,8 +13,26 @@ default + instantiate 1000 std::vector<T>'s: 607ms
 default + instantiate 10.000 std::vector<T>'s: 1064ms
 default + instantiate 50.000 std::vector<T>'s: 8712ms
 default + instantiate 100.000 std::vector<T>'s: 33264ms
+
+total time: 223 seconds.
 ```
-Quite unexpectedly, compiling more vectors does not scale linearly. 
+
+Results from  VS2017/ msbuild (15.8 preview 1.1):
+```
+10.000 empty runs: 1ns
+default empty console project: 1333ms
+default + include "windows.h": 1410ms 
+default + instantiate 1000 std::vector<T>'s: 1502ms
+default + instantiate 10.000 std::vector<T>'s: 4364ms
+default + instantiate 50.000 std::vector<T>'s: 72s
+default + instantiate 100.000 std::vector<T>'s: ?? 
+
+total time: ??  too long I aborted the test.
+```
+
+Quite unexpectedly
+1) compiling more vectors does not scale linearly. 
+2) the recent 15.8 preview 1.1 is roughly a factor of 2 slower? (and even worse in 10k+ scenarios)
 
 ```
 [==========] Running 7 tests from 7 test cases.
