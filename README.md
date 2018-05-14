@@ -24,10 +24,10 @@ default empty console project: 1333ms
 default + include "windows.h": 1410ms 
 default + instantiate 1000 std::vector<T>'s: 1502ms
 default + instantiate 10.000 std::vector<T>'s: 4364ms
-default + instantiate 50.000 std::vector<T>'s: 72s
-default + instantiate 100.000 std::vector<T>'s: ?? 
+default + instantiate 50.000 std::vector<T>'s: 72 seconds! 
+default + instantiate 100.000 std::vector<T>'s: 273 seconds! 
 
-total time: ??  too long I aborted the test.
+total time: 1792 seconds!!? 
 ```
 
 Quite unexpectedly
