@@ -374,6 +374,10 @@ ERROR: The process "cl.exe" not found.
 Press any key to continue . . .
 
 ```
+reproduce with 
+https://github.com/janwilmans/CompileTimer/tree/9e3633a67e1ac9bc52dbf4f6a53d79dfdfe74e7f
+BUT replease line 111 with:
+const std::string options = R"raw(/t:Rebuild /p:Configuration=Release)raw";
 
 ```
 ERROR: The process "tracker.exe" not found.
@@ -418,7 +422,7 @@ ERROR: The process "cl.exe" not found.
 
 [----------] 1 test from VectorWith10Values1kTest
 [ RUN      ] VectorWith10Values1kTest.BuildTimesTest
-[ AVG TIME ] 245429ms         //////// <= link.exe running 4 minutes?
+[ AVG TIME ] 245429ms         //////// <= link.exe running 4 minutes in Release build?
 [       OK ] VectorWith10Values1kTest.BuildTimesTest (1227162 ms)
 [----------] 1 test from VectorWith10Values1kTest (1227162 ms total)
 
