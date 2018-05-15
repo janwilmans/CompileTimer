@@ -377,7 +377,7 @@ Press any key to continue . . .
 reproduce with 
 https://github.com/janwilmans/CompileTimer/tree/9e3633a67e1ac9bc52dbf4f6a53d79dfdfe74e7f
 BUT replease line 111 with:
-const std::string options = R"raw(/t:Rebuild /p:Configuration=Release)raw";
+```const std::string options = R"raw(/t:Rebuild /p:Configuration=Release)raw";```
 
 ```
 ERROR: The process "tracker.exe" not found.
