@@ -33,6 +33,8 @@ total time: 1792 seconds!!?
 Quite unexpectedly
 1) compiling more vectors does not scale linearly. 
 2) the recent 15.8 preview 1.1 is roughly a factor of 2 slower? (and even worse in 10k+ scenarios)
+3) a tracker.exe process sometimes stays alive after the test is finished. (keeping the gen/ directory locked and failing a re-run of the test)
+
 
  * Detailed results from VS2017/ msbuild (15.6 preview 7):
 ```
