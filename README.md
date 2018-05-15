@@ -374,3 +374,81 @@ ERROR: The process "cl.exe" not found.
 Press any key to continue . . .
 
 ```
+
+```
+ERROR: The process "tracker.exe" not found.
+ERROR: The process "cl.exe" not found.
+[==========] Running 11 tests from 11 test cases.
+[----------] Global test environment set-up.
+[----------] 1 test from BaselineEmptyTest
+[ RUN      ] BaselineEmptyTest.BuildTimesTest
+[ AVG TIME ] EMPTY_BASELINE: 1ns
+[       OK ] BaselineEmptyTest.BuildTimesTest (1 ms)
+[----------] 1 test from BaselineEmptyTest (1 ms total)
+
+[----------] 1 test from BaselineSleep1msTest
+[ RUN      ] BaselineSleep1msTest.BuildTimesTest
+[ AVG TIME ] 20ms Baseline: 20.395ms
+[       OK ] BaselineSleep1msTest.BuildTimesTest (103 ms)
+[----------] 1 test from BaselineSleep1msTest (103 ms total)
+
+[----------] 1 test from EmptyProjectTest
+[ RUN      ] EmptyProjectTest.BuildTimesTest
+[ AVG TIME ] 810ms
+[       OK ] EmptyProjectTest.BuildTimesTest (4063 ms)
+[----------] 1 test from EmptyProjectTest (4064 ms total)
+
+[----------] 1 test from WindowsHeaderTest
+[ RUN      ] WindowsHeaderTest.BuildTimesTest
+[ AVG TIME ] 1179ms
+[       OK ] WindowsHeaderTest.BuildTimesTest (5904 ms)
+[----------] 1 test from WindowsHeaderTest (5904 ms total)
+
+[----------] 1 test from Vector1kTest
+[ RUN      ] Vector1kTest.BuildTimesTest
+[ AVG TIME ] 11562ms
+[       OK ] Vector1kTest.BuildTimesTest (57827 ms)
+[----------] 1 test from Vector1kTest (57829 ms total)
+
+[----------] 1 test from VectorInit1kTest
+[ RUN      ] VectorInit1kTest.BuildTimesTest
+[ AVG TIME ] 3880ms
+[       OK ] VectorInit1kTest.BuildTimesTest (19417 ms)
+[----------] 1 test from VectorInit1kTest (19417 ms total)
+
+[----------] 1 test from VectorWith10Values1kTest
+[ RUN      ] VectorWith10Values1kTest.BuildTimesTest
+[ AVG TIME ] 245429ms         //////// <= link.exe running 4 minutes?
+[       OK ] VectorWith10Values1kTest.BuildTimesTest (1227162 ms)
+[----------] 1 test from VectorWith10Values1kTest (1227162 ms total)
+
+[----------] 1 test from VectorWith20Values1kTest
+[ RUN      ] VectorWith20Values1kTest.BuildTimesTest
+[ AVG TIME ] 3797ms
+[       OK ] VectorWith20Values1kTest.BuildTimesTest (19003 ms)
+[----------] 1 test from VectorWith20Values1kTest (19003 ms total)
+
+[----------] 1 test from Vector2KTest
+[ RUN      ] Vector2KTest.BuildTimesTest
+[ AVG TIME ] 63495ms
+[       OK ] Vector2KTest.BuildTimesTest (63511 ms)
+[----------] 1 test from Vector2KTest (63518 ms total)
+
+[----------] 1 test from Vector2kSameTest
+[ RUN      ] Vector2kSameTest.BuildTimesTest
+[ AVG TIME ] 62668ms
+[       OK ] Vector2kSameTest.BuildTimesTest (62683 ms)
+[----------] 1 test from Vector2kSameTest (62684 ms total)
+
+[----------] 1 test from Vector5kTest
+[ RUN      ] Vector5kTest.BuildTimesTest
+[ AVG TIME ] 9561ms
+[       OK ] Vector5kTest.BuildTimesTest (9580 ms)
+[----------] 1 test from Vector5kTest (9592 ms total)
+
+[----------] Global test environment tear-down
+[==========] 11 tests from 11 test cases ran. (1469296 ms total)
+[  PASSED  ] 11 tests.
+Press any key to continue . . .
+
+```
