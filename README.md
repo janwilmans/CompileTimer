@@ -4,6 +4,9 @@ Set of tests to benchmark the compile time of c++ constructs
 This project is an attempt to understand what c++ construct take how much time to build (compile + link)
 The tests are currently only done with VS2017/ msbuild (15.6 preview 7)
 
+To repeat these results use this version:
+https://github.com/janwilmans/CompileTimer/tree/82ec3a6233d12bfcc25dbff42bab90edc3dd856a
+
 Results from VS2017/ msbuild (15.6 preview 7):
 ```
 10.000 empty runs: 191ns
@@ -220,6 +223,8 @@ Press any key to continue . . .
 ```
 
 Updated results with vector initializer lists:
+To repeat this test use
+https://github.com/janwilmans/CompileTimer/tree/24fde2dbded84e71f5d0ebc71f1b6c8bdc4674b1
 
 ```
 ERROR: The process "tracker.exe" not found.
